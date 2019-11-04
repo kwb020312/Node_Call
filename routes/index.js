@@ -20,6 +20,8 @@ const request = async (req, api) => {
       delete req.session.jwt;
       return request(req, api);
     } // 419 외의 다른 에러면
+
+    // 수정해봅시다.
     return error.response;
   }
 };
